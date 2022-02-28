@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans:wght@400;700&family=Poppins:wght@400;500;700&display=swap');
+
+body * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-default);
+}
+
+:root {
+  --color-background: #034159;
+  --color-background-card: #025951; 
+  --color-title-card: #1bbe62;
+  --color-title: #17b15a;
+  --color-background-text-field: #02735E;
+  --color-btn-login: #038C3E;
+  --color-background-btn: #3ece7c;
+  --font-default: 'Noto Sans', sans-serif;;
+}
+
+.main-login {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-container {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-container > h1 {
+  font-size: 3vw;
+  color: var(--color-title);
+}
+
+.image {
+  width: 35vw;
+}
+
+.right-container {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background-color: var(--color-background-card);
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px rgba(19, 19, 19, 0.281);
+}
+
+.card-login > h1 {
+  color: var(--color-title-card);
+  font-weight: 800;
+  margin: 0;
+}
+
+.text-field {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.text-field > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: var(--color-background-text-field);
+  color: rgb(235, 235, 235);
+  font-size: 15px;
+  box-shadow: 0px 10px 40px rgba(19, 19, 19, 0.281);
+  outline: none;
+}
+
+.text-field > label {
+  color: rgb(235, 235, 235);
+  margin-bottom: 10px;
+}
+
+.text-field > input::placeholder {
+  color: #1db498;
+}
+
+.btn-login {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  padding: 16px 0px;
+  margin: 25px;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: var(--color-btn-login);
+  background-color: var(--color-background-btn);
+  box-shadow:  0px 10px 40px -12px rgba(64, 161, 88, 0.281);
+}
+
+
+/*Em quanto for  na tela uma largura de 950px adicione os elementos... */
+
+@media only screen and (max-width: 950px) {
+  .card-login {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-login {
+    flex-direction: column;
+  }
+
+  .left-container > h1 {
+    display: none;
+  }
+
+  .left-container{
+    width: 100%;
+    height: auto;
+  }
+
+  .right-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .image {
+    width: 50vw;
+  }
+
+}

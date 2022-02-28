@@ -1,0 +1,20 @@
+body {
+  margin: 0%;
+  padding: 0;
+}
+
+.espaco {
+  width: 100%;
+}
+.astro {
+  width: 50%;
+  position: relative;
+
+  margin-top: -60%;
+  margin-left: 30%;
+  margin-bottom: 50%;
+}
+
+main {
+  margin: 0;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colocando videos com HTML5</title>
+  </head>
+  <body>
+    <h1>Reproduzindo videos</h1>
+    <p>Como reproduzir video hospedado no seu proprio servidor</p>
+    <video width="500" poster="imagem/controle-600.jpeg" controls loop>
+      <source src="videos/meuvideomp4.mp4" type="video/mp4" />
+      <source src="videos/meuvideowebm.webm" type="video/webm" />
+      <p>Seu navegador não tem compatibilidade com reprodutor de videos.</p>
+    </video>
+    <h1>Inserindo video do Youtube</h1>
+    <p>Como inserir video do Youtube usando codigo.</p>
+    <iframe
+      width="500"
+      height="315"
+      src="https://www.youtube.com/embed/yLOUahp-RIc"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <h1>Iserindo video do Vimeo</h1>
+    <p>Como inserir video do Vimeo unsando codigo.</p>
+    <iframe
+      src="https://player.vimeo.com/video/193234340?h=d2785e8c3b&autoplay=1&loop=1&color=ff0179&portrait=0"
+      width="500"
+      height="315"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: Indroid;
+  src: url('fontes/idroid.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #41bfb3;
+}
+
+/*===========================Variable============================*/
+
+:root {
+  --color-background: #41bfb3;
+  --color-titulo: #ffffff;
+  --color-subtitulo: #2a8c82;
+  --color-links: white;
+  --color-hover: #1b504a;
+  --color-main: white;
+  --color-background-list: #2a8c826b;
+  --color-background-footer: #193a34;
+  --color-extra: #193a34;
+}
+
+
+h1 {
+  font-size: 2.5em;
+  color: var(--color-titulo);
+}
+
+h2 {
+  font-size: 1.5em;
+  color: var(--color-subtitulo);
+  font-family: Indroid, sans-serif;
+  box-shadow: inset 0px 0px 10px 10px #2a8c825d;
+}
+
+/*==========================Cabeça===============================*/
+
+header {
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(to bottom, #275950, #193a34);
+  margin: 0;
+  padding: 15px;
+  box-shadow: 0px 10px 10px #16464157;
+}
+
+.menu {
+  text-align: left;
+}
+
+nav > a {
+  text-decoration: none;
+  color: var(--color-links);
+  padding: 10px;
+  font-weight: 600;
+}
+
+nav > a:hover {
+  background-color: var(--color-hover);
+}
+
+
+/*===============================Corpo-Principal==============================*/
+
+main {
+  width: 900px;
+  background-color: var(--color-main);
+  margin: auto;
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 10px 15px #1b504b4f;
+  min-width: 400px;
+  max-width: 800px;
+  line-height: 1.5em;
+}
+
+/*========================Video=====================*/
+div.video {
+  position: relative;
+  background-color: var(--color-background-footer);
+  height: 0px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 15px;
+  padding-bottom: 59%;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+/*=======================Lista==============================*/
+
+.lista {
+  background-color: var(--color-background-list);
+  border-radius: 10px 10px 10px 10px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 15px rgba(77, 76, 76, 0.356);
+}
+
+.extra {
+  background-color: var(--color-extra);
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  margin: 10px;
+}
+
+
+.lista-container > ul {
+  list-style-type: '\2714\0020\0020';
+  columns: 2;
+  list-style-position: inside;
+}
+
+ul > li > a {
+  color: black;
+}
+
+
+/*============================Footer============================*/
+
+
+footer {
+  background-color: var(--color-background-footer);
+  text-align: center;
+  padding: 1px;
+  margin-top: 15px;
+}
+
+footer > p {
+  color: white;
+
+}

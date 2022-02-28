@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(218, 216, 214);
+        margin: auto;
+        padding: 10px;
+        width: 700px;
+      }
+
+      header {
+        background-color: azure;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      main {
+        background-color: aliceblue;
+        padding: 10px;
+        border-radius: 10px 10px;
+      }
+
+      nav {
+        background-color: black;
+        padding: 5px;
+        box-shadow: 5px 5px 10px rgba(56, 56, 56, 0.39);
+      }
+      nav > a{
+        text-decoration: none;
+        color: aliceblue;
+        font-size: larger;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      footer {
+        background-color: rgb(0, 0, 0);
+        color: antiquewhite;
+        padding: 5px;
+        margin: 0px;
+        text-align: center;
+      }
+
+      footer > p {
+        margin: 0px;
+      }
+
+      #noticias {
+        background-color: rgb(184, 184, 184);
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+      }
+
+      section > aside {
+        background-color: rgb(122, 122, 122);
+      }
+
+      div {
+        height: 100px;
+        width: 100px;
+        margin: 50px;
+        background-color: rgb(167, 10, 10);
+        border-radius: 50%;
+        display: inline-block;
+        border: 1px solid black;
+      }
+
+      div:hover {
+        background-color: aqua;
+      }
+
+      div:active {
+        background-color: blue;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos">
+        <p>Esportes Poilitica Tecnologia</p>
+      </section>
+      <section id="noticias">
+        <h2>Noticia sobreo Brasiil</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod iure
+          aspernatur veritatis! Ducimus architecto sunt ratione asperiores. Aut
+          dignissimos tenetur consequatur natus laboriosam earum quam
+          necessitatibus quibusdam! Officias, et error?
+        </p>
+        <aside>
+          <p>Arigo escrito po jose da silva</p>
+        </aside>
+      </section>
+      <footer>
+        <p>Artigo escrito por jose da silva</p>
+      </footer>
+
+      <div id="bola"></div>
+      <div id="bola"></div>
+      <div id="bola"></div>
+      <div id="bola"></div>
+      <div id="bola"></div>
+      <div id="bola"></div>
+
+
+    </main>
+  </body>
+</html>
