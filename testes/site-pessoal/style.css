@@ -4,6 +4,12 @@
 
 :root {
   --background-principal: rgb(233, 231, 231);
+  --color-dark: rgb(10, 10, 10);
+  --color-dark-variante: rgb(37, 37, 37);
+  --color-info-dark: rgb(27, 27, 27);
+  --color-danger: rgb(226, 96, 146);
+  --color-success: rgb(62, 202, 85);
+  --color-warning: rgb(216, 85, 85);
 }
 
 * {
@@ -27,4 +33,64 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 0.88em;
   background-color: var(--background-principal);
+  user-select: none;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--color-dark);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 0.88em;
+}
+
+h4 {
+  font-size: 0.8em;
+}
+
+h5 {
+  font-size: 0.77em;
+}
+
+p {
+  font-size: 0.8em;
+  color: var(--color-dark-variante);
+}
+
+.profile-photo {
+  width: 2.8rem;
+  height: 2.8em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.text-muted {
+  color: var(--color-info-dark);
+}
+
+.danger {
+  color: var(--color-danger);
+}
+
+.success {
+  color: var(--color-success);
+}
+
+.warning {
+  color: var(--color-warning);
 }
