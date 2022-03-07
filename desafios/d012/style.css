@@ -58,6 +58,18 @@ p > a:hover {
 
 /*========================Main===================*/
 
-.poema {
- padding: 10px;
+
+
+.background-1 {
+  background-image: url(pacote-d012/imagens/background001.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.poema01 {
+  color: white;
+  padding: 50px;
+  font-size: 2em;
 }
