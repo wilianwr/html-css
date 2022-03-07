@@ -10,6 +10,8 @@
 
 * {
   font-family: var(--font-text);
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -17,8 +19,6 @@ body {
   height: 100vh;
   text-decoration: none;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -43,13 +43,13 @@ body {
 
 .autorais {
   color: var(--color-white);
-  margin-top: -40px;
 }
 
 p > a {
   text-decoration: none;
   color: var(--color-white);
   font-weight: 800;
+  padding: 10px;
 }
 
 p > a:hover {
@@ -58,18 +58,50 @@ p > a:hover {
 
 /*========================Main===================*/
 
+.poema {
+  margin: 30px;
+  font-size: 2em;
+}
+section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+}
 
-
-.background-1 {
-  background-image: url(pacote-d012/imagens/background001.jpg);
+.background {
+  background-color: aqua;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  box-shadow: 0px 10px 40px inset rgba(32, 32, 32, 0.671);
+}
+
+#imagem-joaninha {
+  background-image: url(pacote-d012/imagens/background001.jpg);
+}
+
+#imagem-texto {
+  background-image: url();
 }
 
 .poema01 {
   color: white;
   padding: 50px;
   font-size: 2em;
+}
+
+.fundo {
+  background-color: rgba(59, 59, 59, 0.541);
+  padding: 10px;
+  width: 70%;
+}
+/*============================Footer====================*/
+
+.footer {
+  background-color: var(--color-background);
+  color: var(--color-white);
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
 }
